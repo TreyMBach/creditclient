@@ -14,7 +14,7 @@ function App() {
 
   const addPerson = (event) => {
     event.preventDefault();
-    axios.post('http://credit-form-d9821669364c.herokuapp.com/create', {
+    axios.post('https://credit-form-d9821669364c.herokuapp.com/create', {
       name: name, 
       age: age, 
       credit: credit
@@ -25,7 +25,7 @@ function App() {
 
   const showPeople = (event) => {
     event.preventDefault();
-    axios.get('http://credit-form-d9821669364c.herokuapp.com/people').then((response) => {
+    axios.get('https://credit-form-d9821669364c.herokuapp.com/people').then((response) => {
       setpeopleList(response.data)
       console.log(response.data)
     })
